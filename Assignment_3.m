@@ -4,7 +4,7 @@ clear ; close all;clc
 % Load Data
 
 load('Iris.mat');
-x(:,4)=100*x(:,4);
+x(:,4)=10*x(:,4);
 k=max(y)-min(y)+1;
 m=length(y);
 A=0;
@@ -46,7 +46,7 @@ plot(x(find(yY(:,1)==1),1),x(find(yY(:,1)==1),4),'b+',x(find(yY(:,1)==2),1)...
 
 hold on;
 xlabel('sepal length in cm')
-ylabel('sepal width in cm')
+ylabel('petal width in cm')
 
 hold off;
 yY=1*yY
